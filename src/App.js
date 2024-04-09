@@ -5,6 +5,7 @@ import SearchRecipe from './components/SearchRecipe';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import View from './components/View';
+import Main from './components/Main';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 <NavBar/>
 <BrowserRouter>
 <Routes>
+<Route path="/" element={<Main/>}   />
 <Route path="/view" element={<View/>}   />
 <Route path="/search" element={<SearchRecipe/>}   />
 <Route path="/add" element={<AddRecipe/>}   />
